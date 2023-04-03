@@ -1,2 +1,6 @@
 # ccbd-a2
- Frontend for photo album
+Submitted Files:
+Frontend
+API YAML
+CloudTemplate YAML
+Lambda Functions
