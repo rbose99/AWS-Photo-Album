@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="script.js"></script>
+    <script type="text/javascript" src="apiGateway-js-sdk/lib/axios/dist/axios.standalone.js"></script>
+	<script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/rollups/hmac-sha256.js"></script>
+	<script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/rollups/sha256.js"></script>
+	<script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/components/hmac.js"></script>
+	<script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/components/enc-base64.js"></script>
+	<script type="text/javascript" src="apiGateway-js-sdk/lib/url-template/url-template.js"></script>
+	<script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/sigV4Client.js"></script>
+	<script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/apiGatewayClient.js"></script>
+	<script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/simpleHttpClient.js"></script>
+	<script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/utils.js"></script>
+	<script type="text/javascript" src="apiGateway-js-sdk/apigClient.js"></script>
+    <title>Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">  
+</head>
+<body>
+    <h1 >Photo Album</h1>
+    <div class="wrap">
+        <div class="upload">
+                <div>
+                <input type="file" id="uploadedFile" name="filename"  accept="image/*">
+                </div>
+               
+                <input type="text" id="customLabels" class="uploader" name="customLabels" placeholder="Enter comma separated labels">
+           
+            <button class="uploadButton" type="button" onclick="upload()">Upload</button>
+     
+         </div>
+     
+        <div class="search">
+           <input type="text" class="searchBar" placeholder="Search for photos">
+           <button type="button" class="searchButton" onclick="search()">
+             <i class="fa fa-search"></i>
+          </button>
+        </div>
+    </div>
+     
+    <div id="searchResults">
+    </div>
+
+</body>
+</html>
